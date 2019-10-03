@@ -1,183 +1,27 @@
 <html>
-      
-        
-       
-        <style>
-       .MyInput{
-           font-size:17px;
-       }
-       div{
-        text-align:center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      width: <100%>;
-      
-      
-       }
-       li{
-         list-style-type: none; 
-        text-align: left: ;
-        font-size-adjust: initial;
-        border: 0.5rem outset darkgoldenrod;
- background-color:skyblue;
-  box-shadow: 0 0 0 1rem skyblue;
-  border-radius: 5px;
-  font: bold 1.5rem sans-serif;
-  margin: 2rem;
-  padding: 1rem;
-  outline-offset: 0.5rem;
-  cursor: pointer;
-  transition: 0.2s;
-       }
-      ul li:nth-child(odd) {
-  background: #1672c7;}
- ul li:hover {
-  background: #ddd;}
-      
-  .close {
-           
-      
-  width: 3%;
-  
-  
- 
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>TO DO LIST</h1>
 
-    
-  border: 0.5rem outset darkgoldenrod;
+    <h2>Enter text into the input field to add items to your list</h2>
 
+    <h3>Click the item to mark it as complete.</h3>
 
-  border-radius: 8px;
-  
+    <h4>Click the "X" to remove the item from your list.</h4>
+    <br />
+    <div id="myList">
+      <input type="text" id="MyInput" placeholder="New item..." />
+      <button onclick="createList()">submit</button>
+    </div>
+    <ul id="Mylist">
+      <li>eat<span class="close">&times;</span></li>
 
-  background: rgb(2, 45, 187);
-  color: rgb(230, 230, 230);
-  float: right ;
-  text-align: center;
-  font-size: 17px;
-  cursor: pointer;
-  transition: 0.3s;
+      <li>drink<span class="close">&times;</span></li>
+      <li>sleep<span class="close">&times;</span></li>
+    </ul>
 
- 
-}
-  
-.close:hover {
-  background-color: rgb(199, 19, 19);
-
-
-}
-
-
-  .checked {
-    text-decoration: line-through ;
-    
- 
- }
-
-
-*/
-/*.close {
-  width: 5%;
-
-background: rgb(4, 71, 97);
-color: rgb(5, 92, 192);
-float: right ;
-text-align: center;
-font-size: 17px;
-cursor: pointer;
-transition: 0.3s;
-border-radius: 1;
-
-}
-
-  transform: translate(0%, -50%);
-}
-
-.close:hover {background: rgb(189, 12, 12);}
-
-
-*/
-        </style>
-        <body>
-            <h1 style="text-align:center;color:tomato;font-family:Verdana;">TO DO LIST</h1>   
-            
-            <body style="background-color:MediumSeaGreen;">
-                    <h3 style="text-align:center;color:yellow;font-family:Verdana;">Enter text into the input field to add items to your list</h3>   
-   
-            <h3
-            style="text-align:center;color:rgb(212, 0, 255);font-family:Verdana;">Click the item to mark it as coomplete.</h3>   
-            
-
-            <h3
-            style="text-align:center;color:rgb(0, 255, 255);font-family:Verdana;">Click the "X" to remove the item from your list.</h3>
-             <br>      
-            <div id="myList" >
-                    
-                    
-                <input  style="width:90em;; type="text" id="MyInput"placeholder="New item..." >
-                <button  onclick="createList()">submit</button> 
-               
-                
-            </div>
- <ul id="Mylist" >
-  
-    <li>eat<span class="close">&times;</span></li>
-  
-  <li>drink<span class="close">&times;</span></li>
-  <li>sleep<span class="close">&times;</span></li>
- 
-
- </ul>
-
- <script>
-  
- function createList() {
-    var MyInput= document.getElementById("MyInput")
-   var node = document.createElement("LI");
-    
-    var textnode = document.createTextNode(MyInput.value);
-    node.appendChild(textnode);
-    document.getElementById("Mylist").appendChild(node);
-
-    var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  node.appendChild(span);
-  
-  
-  var i;
-
-for (i = 0; i < closebutton.length; i++) {
-  closebutton[i].addEventListener("click", function() {
-    this.parentElement.style.display = 'none';
-  });
-}
-  }
-
-  var closebutton = document.getElementsByClassName("close");
-var i;
-
-for (i = 0; i < closebutton.length; i++) {
-  closebutton[i].addEventListener("click", function() {
-    this.parentElement.style.display = 'none';
-  });
-}
-
-
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
- 
-
-
-  
-    
- </script>
-
-
-         
-            </body>
-  
+    <script src="script.js"></script>
+  </body>
 </html>

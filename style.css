@@ -1,12 +1,87 @@
-<style>
+.MyInput {
+  font-size: 17px;
+}
+div {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
 
+h1 {
+  text-align: center;
+  color: tomato;
+  font-family: Verdana;
+}
 
+h2 {
+  text-align: center;
+  color: yellow;
+  font-family: Verdana;
+}
 
+h3 {
+  text-align: center;
+  color: rgb(212, 0, 255);
+  font-family: Verdana;
+}
+h4 {
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-family: Verdana;
+}
+body {
+  background-color: MediumSeaGreen;
+}
+input {
+  width: 90em;
+}
+button {
+  color: red;
+  background-color: rgb(12, 206, 206);
+}
+li {
+  list-style-type: none;
+  text-align: left;
+  font-size-adjust: initial;
+  border: 0.5rem outset darkgoldenrod;
+  background-color: rgb(101, 184, 218);
+  box-shadow: 0 0 0 0.5rem rgb(0, 235, 243);
+  border-radius: 5px;
+  font: bold 1.5rem sans-serif;
+  margin: 2rem;
+  padding: 0.4rem;
+  outline-offset: 0.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+ul li:nth-child(odd) {
+  background: #2d8ae0;
+}
+ul li:hover {
+  background: #ddd;
+}
 
+.close {
+  width: 35px;
+  height: 20px;
 
+  border: 0.3rem outset darkgoldenrod;
 
+  border-radius: 7px;
 
+  background: rgb(35, 79, 221);
+  color: rgb(230, 230, 230);
+  float: right;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+.close:hover {
+  background-color: rgb(199, 19, 19);
+}
 
-
-
+.checked {
+  text-decoration: line-through;
+}
