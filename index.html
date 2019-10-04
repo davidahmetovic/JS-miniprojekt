@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>TO DO LIST</h1>
+
+    <h2>Enter text into the input field to add items to your list</h2>
+
+    <h3>Click the item to mark it as complete.</h3>
+
+    <h4>Click the "X" to remove the item from your list.</h4>
+    <br />
+    <div>
+      <input type="text" id="MyInput" placeholder="New item..." />
+      <button id="mybtn" onclick="createList()">
+        <i class="fa fa-pencil"></i>
+      </button>
+
+      <ul id="Mylist"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
