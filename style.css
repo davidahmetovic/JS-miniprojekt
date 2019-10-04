@@ -1,10 +1,11 @@
 .MyInput {
-  font-size: 17px;
+  font-size: 25px;
 }
 div {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
+  margin: auto;
 }
 
 h1 {
@@ -21,36 +22,55 @@ h2 {
 
 h3 {
   text-align: center;
-  color: rgb(212, 0, 255);
+  color: rgb(255, 2, 2);
   font-family: Verdana;
 }
 h4 {
   text-align: center;
-  color: rgb(0, 255, 255);
+  color: rgb(221, 12, 248);
   font-family: Verdana;
 }
 body {
-  background-color: MediumSeaGreen;
+  background-color: rgb(15, 240, 165);
 }
 input {
   width: 90em;
+  height: 5%;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  font: bold 0.7rem sans-serif;
+  font-size: 93%;
+  padding-top: 5px;
+}
+ul {
+  justify-content: center;
 }
 button {
+  background-size: 50%;
   color: red;
-  background-color: rgb(12, 206, 206);
+  background-color: rgba(6, 199, 199, 0.767);
+  width: 5%;
+  height: 5%;
+  font-size: 25px;
+  padding-top: -2px;
+  border: 3px outset rgba(1, 255, 255, 0.733);
+
+  border-radius: 10px;
 }
+
 li {
   list-style-type: none;
   text-align: left;
   font-size-adjust: initial;
-  border: 0.5rem outset darkgoldenrod;
+  border: 6px outset rgba(0, 231, 162, 0.733);
   background-color: rgb(101, 184, 218);
-  box-shadow: 0 0 0 0.5rem rgb(0, 235, 243);
-  border-radius: 5px;
+  height: 27px;
+  border-radius: 3px;
   font: bold 1.5rem sans-serif;
-  margin: 2rem;
-  padding: 0.4rem;
-  outline-offset: 0.2rem;
+
+  padding: 0.3em;
+  margin-right: 42px;
+  margin-bottom: 10px;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -63,9 +83,9 @@ ul li:hover {
 
 .close {
   width: 35px;
-  height: 20px;
-
-  border: 0.3rem outset darkgoldenrod;
+  height: 25px;
+  margin-top: -2px;
+  border: 3px outset rgba(11, 92, 184, 0.808);
 
   border-radius: 7px;
 
@@ -73,9 +93,13 @@ ul li:hover {
   color: rgb(230, 230, 230);
   float: right;
   text-align: center;
-  font-size: 17px;
+  font-size: 23px;
+
   cursor: pointer;
   transition: 0.3s;
+}
+.close:nth-child(odd) {
+  background: #2d8ae0;
 }
 
 .close:hover {

@@ -1,5 +1,9 @@
 <html>
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
@@ -11,16 +15,14 @@
 
     <h4>Click the "X" to remove the item from your list.</h4>
     <br />
-    <div id="myList">
+    <div>
       <input type="text" id="MyInput" placeholder="New item..." />
-      <button onclick="createList()">submit</button>
-    </div>
-    <ul id="Mylist">
-      <li>eat<span class="close">&times;</span></li>
+      <button id="mybtn" onclick="createList()">
+        <i class="fa fa-pencil"></i>
+      </button>
 
-      <li>drink<span class="close">&times;</span></li>
-      <li>sleep<span class="close">&times;</span></li>
-    </ul>
+      <ul id="Mylist"></ul>
+    </div>
 
     <script src="script.js"></script>
   </body>

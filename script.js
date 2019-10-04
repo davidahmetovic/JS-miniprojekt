@@ -29,6 +29,13 @@ for (i = 0; i < closebutton.length; i++) {
     this.parentElement.style.display = "none";
   });
 }
+var MyInput = document.getElementById("MyInput");
+MyInput.addEventListener("keyup", function createList(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("mybtn").click();
+  }
+});
 
 var list = document.querySelector("ul");
 list.addEventListener(
